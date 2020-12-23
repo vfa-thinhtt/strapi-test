@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruitments",
+  "info": {
+    "name": "Recruitment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Job_title": {
+      "type": "string",
+      "required": true
+    },
+    "Job_salary": {
+      "type": "string",
+      "required": true
+    },
+    "Job_highlight": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_required": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_salary_reason": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_yours_benefits": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_working_environments": {
+      "type": "richtext",
+      "required": true
+    },
+    "Job_highvalue_benefits": {
+      "type": "richtext",
+      "required": true
+    },
+    "Priority": {
+      "type": "integer"
+    }
+  }
+}

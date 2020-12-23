@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "blogtitle": {
+      "type": "string",
+      "unique": true
+    },
+    "blogcontent": {
+      "type": "richtext"
+    },
+    "featuredimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "blogs"
+    },
+    "Job_description_trial": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
